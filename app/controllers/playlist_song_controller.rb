@@ -14,8 +14,7 @@ class PlaylistSongController < Sinatra::Base
       playlist.update(duration: new_duration)
 
       #update last updated
-      playlist.update(last_update: Time.new)
-      
+      playlist.update(last_update: Time.new)      
     end
 
     #Read songs from playlist
