@@ -18,7 +18,6 @@ class PlaylistController < Sinatra::Base
           duration: 0,
           name: params[:name]
         )
-
         newPlaylist.to_json
       end
 
@@ -28,6 +27,7 @@ class PlaylistController < Sinatra::Base
       user = User.find(params[:user_id])
       playlist = user.playlists.find(params[:playlist_id])
       playlist.update(name: params[:name])
+      playlist.to_json
     end
 
 
