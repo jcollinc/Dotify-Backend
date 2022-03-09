@@ -11,13 +11,15 @@ class PlaylistController < Sinatra::Base
   
       #Create new playlist
       post "/users/:user_id/playlists" do
-        Playlist.create(
+        newPlaylist = Playlist.create(
           user_id: params[:user_id], 
           creation_date: Date.new,
           last_update: Date.new,
           duration: 0,
           name: params[:name]
         )
+
+        newPlaylist.to_json
       end
 
 
