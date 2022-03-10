@@ -34,7 +34,7 @@ s_red = Song.create(title: "Dark Red", album_id: demo.id ,  genre: "indie", yout
 
 
 #User
-u1 = User.create(user_name: "test_user", password: "test123", email: "test_user@test.com")
+u1 = User.create(user_name: "Matt", password: "test123", email: "test_user@test.com")
 u2 = User.create(user_name: "user2", password: "iloveuser2", email: "test_user2@test.com")
 
 

@@ -3,7 +3,7 @@ class PlaylistSongController < Sinatra::Base
     
     #create new playlist song
     post "/users/:user_id/playlists/:playlist_id" do
-      PlaylistSong.create(
+      newSong = PlaylistSong.create(
         playlist_id: params[:playlist_id],
         song_id: params[:song_id]
       )
@@ -14,7 +14,9 @@ class PlaylistSongController < Sinatra::Base
       playlist.update(duration: new_duration)
 
       #update last updated
-      playlist.update(last_update: Time.new)      
+      playlist.update(last_update: Time.new)   
+      
+      playlist.to_json
     end
 
     #Read songs from playlist
