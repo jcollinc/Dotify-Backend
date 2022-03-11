@@ -1,0 +1,48 @@
+# Artists
+
+jimi = Artist.create(name: "Jimi Hendrix", followers: 202131, about: "Widely regarded as one of the most influential electric guitarists in the history of popular music.")
+frank_ocean = Artist.create(name: "Frank Ocean", followers: 202131, about: "I don't think we're using this info anywhere")
+donnie = Artist.create(name: "Donnie Trumpet and the Social Experiment", followers: 202131, about: "I don't think we're using this info anywhere")
+busdriver = Artist.create(name: "BUSDRIVER", followers: 202131, about: "I don't think we're using this info anywhere")
+lamp = Artist.create(name: "Lamp", followers: 202131, about: "I don't think we're using this info anywhere")
+paul_mccartney = Artist.create(name: "Paul Mccartney", followers: 202131, about: "I don't think we're using this info anywhere")
+queen = Artist.create(name: "Queen", followers: 202131, about: "I don't think we're using this info anywhere")
+mac_miller = Artist.create(name: "Mac Miller", followers: 202131, about: "I don't think we're using this info anywhere")
+sumney = Artist.create(name: "Moses Sumney", followers: 202131, about: "I don't think we're using this info anywhere")
+shrek_band = Artist.create(name: "Shrek is Love", followers: 202131, about: "I don't think we're using this info anywhere")
+tom_misch = Artist.create(name: "Tom Misch", followers: 202131, about: "I don't think we're using this info anywhere")
+rush = Artist.create(name: "Rush", followers: 202131, about: "I don't think we're using this info anywhere")
+gorillaz = Artist.create(name: "Gorillaz", followers: 202131, about: "I don't think we're using this info anywhere")
+
+#Albums
+
+electric_ladyland = Album.create(title: "Are You Experienced", artist_id: jimi.id , release_date: "1968", downloads: 2532154, duration: 4436, album_cover: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Jimi_Hendrix_-_Electric_Ladyland.jpg/220px-Jimi_Hendrix_-_Electric_Ladyland.jpg")
+blonde = Album.create(title: "Blonde", artist_id: frank_ocean.id , release_date: "2016", downloads: 2532154, duration: 3608, album_cover: "https://upload.wikimedia.org/wikipedia/en/a/a0/Blonde_-_Frank_Ocean.jpeg")
+surf = Album.create(title: "Surf", artist_id: donnie.id , release_date: "2015", downloads: 2532154, duration: 3114, album_cover: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Surf_%28Donnie_Trumpet_cover%29.png/220px-Surf_%28Donnie_Trumpet_cover%29.png")
+thumbs = Album.create(title: "Thumbs", artist_id: busdriver.id , release_date: "2015", downloads: 2532154, duration: 3078, album_cover: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Thumbsbusdriver.jpg/220px-Thumbsbusdriver.jpg")
+yume = Album.create(title: "ゆめ", artist_id: lamp.id , release_date: "2014", downloads: 2532154, duration: 3140, album_cover: "https://www.sputnikmusic.com/images/albums/185524.jpg")
+pipes = Album.create(title: "Pipes of Peace", artist_id: paul_mccartney.id , release_date: "1983", downloads: 2532154, duration: 2338, album_cover: "https://upload.wikimedia.org/wikipedia/en/5/58/PaulMcCartneyalbum_-_Pipesofpeace.jpg")
+news_of_the_world = Album.create(title: "News of the World", artist_id: queen.id , release_date: "1977", downloads: 2532154, duration: 2350, album_cover: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Queen_News_Of_The_World.png/220px-Queen_News_Of_The_World.png")
+divine_feminine = Album.create(title: "The Divine Feminine", artist_id: mac_miller.id , release_date: "2016", downloads: 2532154, duration: 3156, album_cover: "https://upload.wikimedia.org/wikipedia/en/9/93/Mac_Miller_-_The_Divine_Feminine.png")
+aromanticism = Album.create(title: "Aromanticism", artist_id: sumney.id , release_date: "2017", downloads: 2532154, duration: 2086, album_cover: "https://upload.wikimedia.org/wikipedia/en/c/c2/Aromanticism_Moses_Sumney.jpg")
+shrek = Album.create(title: "Shrek is Love", artist_id: shrek_band.id , release_date: "2017", downloads: 2532154, duration: 1119, album_cover: "https://e.snmc.io/i/1200/s/900ae3ded3bce1e9f051922514438246/7317648")
+geography = Album.create(title: "Geography", artist_id: tom_misch.id , release_date: "2018", downloads: 2532154, duration: 3153, album_cover: "https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Tom_Misch_%E2%80%93_Geography.png/220px-Tom_Misch_%E2%80%93_Geography.png")
+moving_pictures = Album.create(title: "Moving Pictures", artist_id: rush.id , release_date: "1981", downloads: 2532154, duration: 2403, album_cover: "https://upload.wikimedia.org/wikipedia/en/4/4a/Moving_Pictures.jpg")
+demon_days = Album.create(title: "Demon Days", artist_id: gorillaz.id , release_date: "2005", downloads: 2532154, duration: 3047, album_cover: "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Gorillaz_Demon_Days.PNG/220px-Gorillaz_Demon_Days.PNG")
+
+#Songs
+
+s_may_this_be_love = Song.create(title: "All Along The Watchtower", album_id: electric_ladyland.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=HtUH9z_Oey8&ab_channel=TheBeatlesVEVO", duration: 263)
+s_ivy = Song.create(title: "Ivy", album_id: blonde.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=AE005nZeF-A&ab_channel=Blonded", duration: 249)
+s_sunday_candy = Song.create(title: "Sunday Candy", album_id: surf.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=i4ooH8frBWg&ab_channel=ChanceTheRapper", duration: 230)
+s_worlds_to_run = Song.create(title: "Worlds To Run (feat. Milo and Anderson Paak)", album_id: thumbs.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=Yc0VgQM7F6w&ab_channel=NOTCREATIVEJUSTWEIRD", duration: 315)
+s_A = Song.create(title: "A都市の秋", album_id: yume.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=5W9S9la-C6s&ab_channel=Epoch", duration: 245)
+s_say = Song.create(title: "Say Say Say (feat. Michael Jackson)", album_id: pipes.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=aLEhh_XpJ-0&ab_channel=GiraldiMedia", duration: 295)
+s_its_late = Song.create(title: "It's Late", album_id: news_of_the_world.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=0PItMuGp39Q&ab_channel=QueenOfficial", duration: 393)
+s_favorite_part = Song.create(title: "My Favorite Part", album_id: divine_feminine.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=J_8xCOSekog&ab_channel=MacMiller", duration: 274)
+s_plastic = Song.create(title: "Plastic", album_id: aromanticism.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=YpvBlhdrqz8&ab_channel=MosesSumney", duration: 184)
+s_farquaad = Song.create(title: "Lord Farquaad", album_id: shrek.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=fvpauF-m_u0&ab_channel=ShrekIsLove-Topic", duration: 348)
+s_runs_through_me = Song.create(title: "It Runs Through Me (feat. De La Soul)", album_id: geography.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=M1N_wbhAfQ4&ab_channel=TomMisch", duration: 298)
+s_sante = Song.create(title: "Santé", album_id: sante.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=P3QS83ubhHE&ab_channel=StromaeVEVO", duration: 204)
+s_tom_sawyer = Song.create(title: "Tom Sawyer", album_id: moving_pictures.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=auLBLk4ibAk&ab_channel=RushVEVO", duration: 273)
+s_dirty_harry = Song.create(title: "Dirty Harry", album_id: demon_days.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=cLnkQAeMbIM&ab_channel=Gorillaz", duration: 300)
