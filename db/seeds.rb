@@ -66,7 +66,7 @@ s_atl = Song.create(title: "All Time Low", album_id: humancon.id, genre: "pop", 
 s_outro = Song.create(title: "Hand of God - Outro", album_id: humancon.id, genre: "pop", youtube_link: "https://www.youtube.com/watch?v=UYdmI0o3XNQ", duration: 338)
 s_strawberry = Song.create(title: "Strawberry Fields Forever", album_id: strawberry.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=HtUH9z_Oey8&ab_channel=TheBeatlesVEVO", duration: 263)
 s_red = Song.create(title: "Dark Red", album_id: demo.id ,  genre: "indie", youtube_link: "https://www.youtube.com/watch?v=L0wusEVceek&ab_channel=SteveLacy-Topic", duration: 173)
-s_may_this_be_love = Song.create(title: "All Along The Watchtower", album_id: electric_ladyland.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=HtUH9z_Oey8&ab_channel=TheBeatlesVEVO", duration: 263)
+s_may_this_be_love = Song.create(title: "All Along The Watchtower", album_id: electric_ladyland.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=TLV4_xaYynY&ab_channel=JimiHendrixVEVO", duration: 263)
 s_ivy = Song.create(title: "Ivy", album_id: blonde.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=AE005nZeF-A&ab_channel=Blonded", duration: 249)
 s_sunday_candy = Song.create(title: "Sunday Candy", album_id: surf.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=i4ooH8frBWg&ab_channel=ChanceTheRapper", duration: 230)
 s_worlds_to_run = Song.create(title: "Worlds To Run (feat. Milo and Anderson Paak)", album_id: thumbs.id ,  genre: "rock", youtube_link: "https://www.youtube.com/watch?v=Yc0VgQM7F6w&ab_channel=NOTCREATIVEJUSTWEIRD", duration: 315)
